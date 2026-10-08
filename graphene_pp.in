@@ -1,0 +1,14 @@
+&INPUTPP
+    prefix   = 'graphene'
+    outdir   = './tmp/'
+    filplot  = 'graphene_intermed'
+    plot_num = 0                    ! 0 instructs pp.x to read charge/induced density
+/
+&PLOT
+    nfile        = 1
+    filepp(1)    = 'graphene_intermed'
+    weight(1)    = 1.0
+    iflag        = 3                ! 3D real-space grid output
+    output_format= 6                ! Output formatted explicitly as an XSF file
+    fileout      = 'induced_charge_density.xsf'
+/
