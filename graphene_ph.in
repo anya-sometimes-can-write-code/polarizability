@@ -1,0 +1,14 @@
+Linear response to a spatially modulated external field
+&inputph
+  prefix   = 'graphene'
+  outdir   = './tmp/'
+  tr2_ph   = 1.0d-14                ! Extremely tight convergence threshold
+  fildrho  = 'graphene.drho'         ! Crucial: Saves the spatial induced density matrix
+  ldisp    = .false.
+  
+  ! Define the spatial variation vector q = (qx, qy, qz) in crystal units
+  ! This example defines a field varying along the armchair/zigzag direction
+  xq1 = 0.1
+  xq2 = 0.0
+  xq3 = 0.0
+/
